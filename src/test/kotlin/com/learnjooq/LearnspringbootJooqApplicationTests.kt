@@ -1,4 +1,4 @@
-package com.learnjooq.learnspringbootjooq
+package com.learnjooq
 
 import org.junit.Test
 import org.junit.runner.RunWith

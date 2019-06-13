@@ -1,4 +1,4 @@
-package com.learnjooq.learnspringbootjooq
+package com.learnjooq
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
