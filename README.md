@@ -42,3 +42,11 @@ http://localhost:8080/h2-console
 implementation("org.flywaydb:flyway-core:5.2.4")
 ```
 
+-   Add the following directory to the **src/main/resources/db/migration**
+
+-   Create the file using like below and make sure you have the number followed by **__** for flyway to migrate it to you.
+
+```$xslt
+V1__CREATE_EMPLOYEE.sql
+```
+
