@@ -5,6 +5,8 @@ plugins {
 	id("io.spring.dependency-management") version "1.0.7.RELEASE"
 	kotlin("jvm") version "1.2.71"
 	kotlin("plugin.spring") version "1.2.71"
+	id ("nu.studer.jooq") version "3.0.3"
+
 }
 
 group = "com.learnjooq"
@@ -21,6 +23,7 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	implementation( "org.jooq:jooq:3.11.9")
 
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
@@ -30,7 +33,12 @@ dependencies {
 
 	//h2
 	runtimeOnly("com.h2database:h2")
+
+	//jooq
+	jooqRuntime("com.h2database:h2")
+
 }
+
 
 tasks.withType<KotlinCompile> {
 	kotlinOptions {

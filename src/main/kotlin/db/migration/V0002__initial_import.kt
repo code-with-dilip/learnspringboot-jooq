@@ -9,6 +9,7 @@ import java.time.LocalDate
 
 
 class V0002__initial_import : BaseJavaMigration() {
+
     override fun migrate(context: Context?) {
         var dsl = using(context?.connection)
         dsl.insertInto(table("employee"), field("user_name"), field("birth_date"),
